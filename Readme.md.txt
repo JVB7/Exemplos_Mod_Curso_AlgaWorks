@@ -42,6 +42,34 @@
 		:: spring.jpa.hibernate.ddl-auto=Create   // Como será feito? Drop e recriar, quando rodar a aplicação
 
 
+#Mapeando o id da entidade para autoincremento
+
+	--> 1º No atributo da entidade(Classe), adicionar:
+
+		=> @GeneratedValue(PassaEstratejaDeGeraçãoValorAtrib)
+		   @GeneratedValue(strategy = GenerationType.IDENTITY)   // o provedor de persistência irá gerar essa chave
+  		   private Long id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		   
+
+
 
 
 
