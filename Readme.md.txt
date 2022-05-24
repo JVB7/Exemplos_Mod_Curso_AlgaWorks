@@ -51,7 +51,12 @@
   		   private Long id;
 
 
+#Importando dados de teste com import.sql
 
+	--> 1º Alimentado as tabelas criadas para usar em ambiente de teste
+		=> criar um arquivo: import.sql, dentro dele:
+			:: insert into cozinha (nome) values ('Tailandesa');
+			:: insert into cozinha (nome) values ('Indiana');
 
 
 
