@@ -18,3 +18,18 @@
 
 	-->4º Falta adicionar Driver do MySQL:
 		=> Em add starters, selecionar: MySQL Driver
+
+#Mapeando entidades com JPA
+
+	--> 1º Criar as entidades (classes) para depois fazer o mapeamento para banco de dados:
+
+		=> No pacote : com.algaworks.algafood.domain.model
+
+			Classe Cozinha       (Representa uma entidade @Entity) (@Table(name="nomedatabeladoBanco"))
+				obs: toda entidade (classe) deve haver uma atributo identificador, como um registro no banco 'id' key
+				   @Id
+				:: private Long id;
+				   @Column(name = "nomedoAtributo")
+				:: private String nome;
+
+			Classe Restaurante   (Representa uma entidade @Entity)

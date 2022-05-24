@@ -1,0 +1,8 @@
+package com.algaworks.algafood.domain.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Cozinha {
+
+}

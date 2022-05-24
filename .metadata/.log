@@ -147,3 +147,45 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 13:54:42.019
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.KtMjoHGo => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:05.702
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:05.704
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@242d2ed8[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:05.706
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:13.640
+!MESSAGE Boot LS startup time from start to initialized: 7917ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:14.024
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.YOjkPqBwisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:14.027
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:14.028
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:14.029
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:14.030
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.YOjkPqBw => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:14.040
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:14.051
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:14.061
+!MESSAGE buffering callback sts4.classpath.YOjkPqBw algafood-api false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:14.063
+!MESSAGE executing callback sts4.classpath.YOjkPqBw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-24 14:56:15.070
+!MESSAGE executing callback sts4.classpath.YOjkPqBw SUCCESS [done]
