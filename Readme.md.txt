@@ -33,3 +33,29 @@
 				:: private String nome;
 
 			Classe Restaurante   (Representa uma entidade @Entity)
+
+#Criando as tabelas do banco a partir das entidades
+
+	--> 1º Configurar o JPA para gerar o comando DDL
+
+		:: spring.jpa.generate-ddl=true            // Criar automaticamente as tabelas a partir das entidades(classes)
+		:: spring.jpa.hibernate.ddl-auto=Create   // Como será feito? Drop e recriar, quando rodar a aplicação
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

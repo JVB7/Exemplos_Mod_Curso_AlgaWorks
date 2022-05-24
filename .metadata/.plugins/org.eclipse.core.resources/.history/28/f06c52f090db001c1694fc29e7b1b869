@@ -3,4 +3,4 @@ spring.datasource.username=root
 spring.datasource.password=db@Inf0@17
 
 spring.jpa.generate-ddl=true
-spring.jpa.hibernate.ddl-auto=create
+spring.jpa.hibernate.ddl-auto=true
