@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\joaov\OneDrive\Documentos\Spring\Exemplos_Mod_estudo\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
