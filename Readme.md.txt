@@ -120,6 +120,15 @@
 				- pegar dessa variavel de contextos as instancias contidadas no conteiner do spring
 
 
+#Atualizando um objeto no banco de dados
+
+	--> 1º Sem fazer alterações na Classe CadastroCozinha, criamos então uma classe AlteracaoCozinha, nela:
+		=> Um objeto Cozinha, que ira receber o valor de um Id já existente e
+		=> com o mesmo metodo adicionar vamos fazer a ATUALIZAÇÃO desse objeto no banco
+		=> usamo apenas o metodo merge de variavel manager
+
+	--> 1º Alteramos o metodo adicionar para salvar(), já que add e update 
+
 
 		   
 

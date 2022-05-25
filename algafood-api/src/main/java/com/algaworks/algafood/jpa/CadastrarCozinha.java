@@ -21,7 +21,7 @@ public class CadastrarCozinha {
 	
 
 	@Transactional // executa o metodo dentro de uma transação
-	public Cozinha adicionar(Cozinha cozinha) {
+	public Cozinha salvar(Cozinha cozinha) {
 		
 		return manager.merge(cozinha); // vai fundir, colocar minha entidade dentro do contexto de persistencia
 	}
