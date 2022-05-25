@@ -58,14 +58,54 @@
 			:: insert into cozinha (nome) values ('Tailandesa');
 			:: insert into cozinha (nome) values ('Indiana');
 
+#Consultando objetos do banco de dados
+
+	--> 1º Criar uma classe para implementar essa consulta:
+
+		=> No pacote : com.algaworks.algafood.jpa
+			- classe CadastroCozinha (será um @Component)
+			- metodo List<Cozinha> listar()
+
+	--> 2º Criar uma variavel do tipo EntityManager
+		=> Com ela faremos as consultas e alterações no Banco de dados (injeção @PersistenceContext)
+
+	--> 3º Criar uma Classe para executar uma aplicação não Web (inicia  e finaliza)
+		=> No pacote : com.algaworks.algafood.jpa
+			- classe ConsultaCozinhaMain
+
+		//Essa interface gerencia o contexto da nossa aplicação
+		ApplicationContext applicationContext = new SpringApplicationBuilder(AlgafoodApiApplication.class)
+				.web(WebApplicationType.NONE)
+				.run(args);
+		
+		// SpringApplicationBuilder(AlgafoodApiApplication.class) inicializar a aplicação pegando as configurações base da classe AlgafoodApiApplication.class
+		// .web(WebApplicationType.NONE) informa que não é uma aplicação do tipo web
+		// applicationContext usamos para pegar um Bean da classe CadastrarCozinha já que o mesmo contém todas as instancias da inicilização
+		CadastrarCozinha cadastroCozinha = applicationContext.getBean(CadastrarCozinha.class);
+		
+		List<Cozinha> cozinhas = cadastroCozinha.listar();
+		
+		for (Cozinha cozinha : cozinhas) {
+			System.out.println(cozinha.getNome());
+		}
+
+	--> 4º Printar as consultas geradas:
+		:: spring.jpa.show-sql=true
 
 
 
+#Adicionando um objeto no banco de dados
 
+	1º Na classe CadastroCozinha, termos:
+		=> public Cozinha adicionar(Cozinha cozinha){} (vai representar uma @Transactional)
+		=> Com a variavel manager e metodo merge, fazemos a junção
 
-
-
-
+	2º Na classe IncluirCozinhaMain, vamos:
+		=> Criar e incluir as novas cozinhas, usando:
+			- applicationContext = new SpringApplicationBuilder(AlgafoodApiApplication.class) // Para pegar as classes instaciadas pelo spring
+			- cadastroCozinha = applicationContext.getBean(CadastrarCozinha.class);           // Instacia um objeto das instanc. da inciaização
+			- coz1 = cadastroCozinha.adicionar(coz1);                                         // No final adiciona no contexto de persistencia
+			- coz1 // contém agora um objeto persistido no banco com Id (autoIncrement já gerado)
 
 
 
