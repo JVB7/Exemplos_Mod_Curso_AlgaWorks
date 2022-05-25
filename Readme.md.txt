@@ -129,6 +129,44 @@
 
 	--> 1º Alteramos o metodo adicionar para salvar(), já que add e update 
 
+#Excluindo um objeto do banco de dados
+
+	--> 1º Em CadastrarCzinha, criamos um metodo remover() (vai representar uma @Transactional)
+		=> usando a variavel manager chameros o metodo remove // removerá um objeto 
+	
+
+	--> 2º Pega a instancia que está estado TRANSIENT e passar para o estado REMOVED, 
+		=> TUDO ISSO SENTO INTERMEDIADO PELO ESTADO 'MANAGED'
+		
+		2.1º Então vamos buscar o objeto 'buscar(cozinha)', o retorno será um objeto no estado REMOVED 
+
+	APOIO: https://blog.algaworks.com/tutorial-jpa/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		   
 
