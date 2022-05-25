@@ -26,6 +26,10 @@ public class CadastrarCozinha {
 		return manager.merge(cozinha); // vai fundir, colocar minha entidade dentro do contexto de persistencia
 	}
 	
+	public Cozinha buscar(Long id){
+		return manager.find(Cozinha.class, id);
+	}
+	
 	
 }
 

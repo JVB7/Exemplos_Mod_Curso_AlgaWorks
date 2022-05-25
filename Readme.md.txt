@@ -108,7 +108,16 @@
 			- coz1 // contém agora um objeto persistido no banco com Id (autoIncrement já gerado)
 
 
+#Buscando um objeto pelo id no banco de dados
 
+	1º Na classe CadastroCozinha, termos:
+		=> public Cozinha buscar(Long id){}
+		=> Com a variavel manager e metodo find, fazemos a busca
+	
+	2º Na classe BuscarCozinhaMain, vamos:
+		=> Continuar com a variavel de contexto, pois precisamos:
+				- inicia e finalizar uma plaicação não web e
+				- pegar dessa variavel de contextos as instancias contidadas no conteiner do spring
 
 
 
