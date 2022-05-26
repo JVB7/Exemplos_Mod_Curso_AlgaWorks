@@ -6,6 +6,7 @@ import org.springframework.context.ApplicationContext;
 
 import com.algaworks.algafood.AlgafoodApiApplication;
 import com.algaworks.algafood.domain.model.Cozinha;
+import com.algaworks.algafood.domain.repository.CozinhaRepository;
 
 public class InclusaoCozinhaMain {
 	
@@ -14,19 +15,19 @@ public class InclusaoCozinhaMain {
 				.web(WebApplicationType.NONE)
 				.run(args);
 
-		CadastrarCozinha cadastroCozinha = applicationContext.getBean(CadastrarCozinha.class);
+		CozinhaRepository cozinhas = applicationContext.getBean(CozinhaRepository.class);
 		
-		Cozinha coz1 = new Cozinha();
-		coz1.setNome("Brasileira");
+		Cozinha nova_cozinha1 = new Cozinha();
+		nova_cozinha1.setNome("Brasileira");
 		
-		Cozinha coz2 = new Cozinha();
-		coz2.setNome("Italiana");
+		Cozinha nova_cozinha2 = new Cozinha();
+		nova_cozinha2.setNome("Italiana");
 		
-		coz1 = cadastroCozinha.salvar(coz1);
-		coz2 = cadastroCozinha.salvar(coz2);
+		nova_cozinha1 = cozinhas.adicionar(nova_cozinha1);
+		nova_cozinha2 = cozinhas.adicionar(nova_cozinha2);
 		
-		System.out.printf("%d - %s\n", coz1.getId(), coz1.getNome());
-		System.out.printf("%d - %s\n", coz2.getId(), coz2.getNome());
+		System.out.printf("%d - %s\n", nova_cozinha1.getId(), nova_cozinha1.getNome());
+		System.out.printf("%d - %s\n", nova_cozinha2.getId(), nova_cozinha2.getNome());
 	}
 
 	

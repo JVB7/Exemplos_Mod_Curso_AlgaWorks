@@ -13,10 +13,11 @@
     <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
     <fullyQualifiedTypeName name="org.springframework.boot.builder.SpringApplicationBuilder"/>
     <fullyQualifiedTypeName name="org.springframework.boot.WebApplicationType"/>
-    <fullyQualifiedTypeName name="com.algaworks.algafood.jpa.CadastrarCozinha"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.algaworks.algafood.AlgafoodApiApplication"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
     <fullyQualifiedTypeName name="com.algaworks.algafood.domain.model.Cozinha"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+    <fullyQualifiedTypeName name="com.algaworks.algafood.jpa.CadastrarCozinha"/>
 </qualifiedTypeNameHistroy>

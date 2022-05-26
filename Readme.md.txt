@@ -142,40 +142,51 @@
 
 	APOIO: https://blog.algaworks.com/tutorial-jpa/
 
+#Conhecendo o padrão Aggregate do DDD
+
+	- DDD Domain-Driven-Design, Desing orientado por domínio
+	=> Um agregado DDD é um conjunto de objetos de domínio que
+	=> podem ser tratados como uma única unidade.
+	=> exemplo: AGREGADO PEDIDO, é o conjunto de todas as aparte que constitue um pedido, tratado como um único agregado
+
+	1º Um agregado terá um de seus objetos componentes ser a raiz agregada.
+
+		- <<Interface>>
+				<<Aggregate Pedido>> (raiz agregada)
+
+	2º Quaisquer referências de fora do agregado só devem ir para a raiz agregada. (ou seja, outra <<Interface>>)
+
+	3º Agregados são o elemento básico de transferência de armazenamento de dados 
+	
+		=> você solicita carregar ou salvar agregados inteiros. 
+		=> As transações não devem cruzar os limites agregados.
+	
 
 
+	OBS: Os agregados DDD às vezes são confundidos com collection classes (lists, maps, etc)
+	     Os agregados DDD são conceitos de domínio (ordem, visita clínica, lista de reprodução)
+             Um agregado muitas vezes conterá coleções mutliple, juntamente com campos simples.
 
+#Conhecendo e implementando o padrão Repository (orientado a persistencia)(CAMADAS, RESPONSABILIDADES)
 
+	=> Padrão que adiciona mais uma camada para acesso aos dados, usa uma coleção
+		-> Quem usa não precisa saber qual o mecanismo de persistencia de dados está sendo usado
 
+	=> É criado por agregado
 
+	1º Criar uma interface, CozinhaRepository (local onde será armezado as cozinhas)
+		=> dentro do pacote: com.algaworks.algafood.domain.repository
+		=> dentro de CozinhaRepository:
+			-> Lista<Cozinha> listar(); -- renomear--> Lista<Cozinha> todas();
+			-> Cozinha buscar(Long id); -- renomear--> Cozinha porId(Long id);
+			-> Cozinha salvar(Cozinha cozinha); -- renomear--> Cozinha adicionar(Cozinha cozinha);
+			-> void remover(Cozinha cozinha);
 
+	2º Criar classe CozinhaRepositoryImp que implementa de CozinhaRepository
+		=> dentro do pacote: com.algaworks.algafood.infrastructure.repository
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		   
-
-
-
-
-
-
-
+	3º Exlcuir a classe CadastroCozinha e redefinir a referencia da mesma nas outras classes para CozinhaRepositoryImp
+		
 
 
 

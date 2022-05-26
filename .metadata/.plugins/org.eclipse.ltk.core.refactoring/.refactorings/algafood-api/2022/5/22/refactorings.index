@@ -2,3 +2,12 @@
 1653490069700	Copy compilation unit
 1653497207362	Copy compilation unit
 1653499106390	Copy compilation unit
+1653528238253	Delete element
+1653529187546	Rename method 'buscar'
+1653529211945	Rename method 'salvar'
+1653529233467	Rename method 'listar'
+1653529389664	Rename local variable 'cadastrarCozinha'
+1653529467251	Rename local variable 'cadastroCozinha'
+1653529506072	Rename local variable 'coz1'
+1653529524251	Rename local variable 'coz2'
+1653529545657	Rename local variable 'cadastroCozinha'
