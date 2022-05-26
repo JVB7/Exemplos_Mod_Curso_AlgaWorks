@@ -214,6 +214,25 @@
 	3º Criar a classe RestauranteRepositotyImp                // fazer as implmentações dos metodos da INTERFACE RestauranteRepository
 	4º Alterar o arquivo import.sql e adicionaremos comandos insert para popularmos a tabela de restaurantes ao iniciar a aplicação
 
+#Mapeando relacionamento com @ManyToOne
+
+	1º Criar o relacionamento entre a classe Restaurante e classe Cozinha, atravez do atributo cozinha e a notação @ManyToOne
+		@ManyToOne
+		private Cozinha cozinha
+
+	2º Usando propriedades vamos setar o gerador da foreign key (DDL do banco)
+		
+		=> Ctrl+Shift+t para pesquisar o dialect, ao abrir, pegará o nome do pacote 'org.hibernate.dialect' e nome da classe 'MySQL8Dialect'
+
+		:: spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect
+
+	3º Vamos referncia uma cozinha para um restaurante passando seu codigo(key)
+
+		=> ex: Cozinha 'Tailandesa' : insert into cozinha (id, nome) values (2,'Tailandesa');                                  primary key (2)
+		       Restaurante 'Ecologia' : insert into restaurante (nome, taxa_frete, cozinha_id) values ('Ecologia', 7, 2);      foreing key (2)
+
+		
+
 
 
 
