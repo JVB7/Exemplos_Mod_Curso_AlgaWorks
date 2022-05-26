@@ -207,9 +207,12 @@
 				  // mesmo já contendo no @Data, quero q mesmo seja usado somente explicitamente na variavel, ex: 'Id'
 
 
+#Desafio: Lombok e repositório de restaurantes
 
-
-
+	1º Alterar a classe Restaurante (usar as notações lombok)
+	2º Criar a interface RestauranteRepository e seus metodos
+	3º Criar a classe RestauranteRepositotyImp                // fazer as implmentações dos metodos da INTERFACE RestauranteRepository
+	4º Alterar o arquivo import.sql e adicionaremos comandos insert para popularmos a tabela de restaurantes ao iniciar a aplicação
 
 
 
