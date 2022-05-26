@@ -7,17 +7,20 @@
     <fullyQualifiedTypeName name="javax.annotation.Generated"/>
     <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
     <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
     <fullyQualifiedTypeName name="org.springframework.boot.ApplicationArguments"/>
     <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
     <fullyQualifiedTypeName name="org.springframework.boot.builder.SpringApplicationBuilder"/>
     <fullyQualifiedTypeName name="org.springframework.boot.WebApplicationType"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.algaworks.algafood.AlgafoodApiApplication"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
-    <fullyQualifiedTypeName name="com.algaworks.algafood.domain.model.Cozinha"/>
     <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
     <fullyQualifiedTypeName name="com.algaworks.algafood.jpa.CadastrarCozinha"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="com.algaworks.algafood.domain.repository.CozinhaRepository"/>
+    <fullyQualifiedTypeName name="com.algaworks.algafood.domain.model.Cozinha"/>
+    <fullyQualifiedTypeName name="com.algaworks.algafood.infrastructure.repository.CozinhaRepositoryImp"/>
 </qualifiedTypeNameHistroy>

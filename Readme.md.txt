@@ -189,6 +189,47 @@
 		
 
 
+#Conhecendo e usando o Lombok
+
+	=> Biblioteca Lombok:  
+
+		1º Em add starters, buscar por Lombok e fazer a instalação
+
+		2º Download no site do Lombok
+
+		3º Apagar o metodos getter e setter da classe Cozinha e adicionar:
+			=> A notação: 
+				- @Getter e @Setter
+				- @EqualsandHashCode
+
+			=> @Data // contém todos os anteriores
+				- @EqualsAndCode(onlyExplicitlyIncluded = true) 
+				  // mesmo já contendo no @Data, quero q mesmo seja usado somente explicitamente na variavel, ex: 'Id'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
