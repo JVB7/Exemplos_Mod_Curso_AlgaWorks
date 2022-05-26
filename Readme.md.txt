@@ -231,13 +231,38 @@
 		=> ex: Cozinha 'Tailandesa' : insert into cozinha (id, nome) values (2,'Tailandesa');                                  primary key (2)
 		       Restaurante 'Ecologia' : insert into restaurante (nome, taxa_frete, cozinha_id) values ('Ecologia', 7, 2);      foreing key (2)
 
-#A anotação @JoinColumn
+# A anotação @JoinColumn
 
 	1º Referenciando uma coluna do banco de dados, ao invés de suar @Column será usado @JoinColumn
 		ex: 
 		    @ManyToOne
 		    @JoinColumn(name="cozinha_id")
 		    private  Cozinha cozinha;
+
+
+# Propriedade nullable de @Column e @JoinColumn
+	
+	=> Se olharmos no banco, perceberemos que as colunas aceitam valores null, e o correto seria notnull
+
+	1º Alterando o valor padrão nullable(true) para false
+		ex:
+		   @Column(name="taxa_frete", nullable=false)  // ISSO NÃO VAI FAZER A COLUNA, NÃO ACEITAR NULO, COMO TBM INFLUENCIARA NO TIPO JOIN (fetching)
+        	   private BigDecimal taxaFrete;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
