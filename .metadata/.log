@@ -1933,3 +1933,2729 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.internal.ui.con
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:43:23.250
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.mWukacGH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:43:23.253
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.mWukacGH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:43:23.254
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:43:23.255
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.mWukacGH => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:04.307
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:04.307
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@36b4cbb8[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:04.310
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-05-26 15:48:06.381
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:150)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-05-26 15:48:06.895
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:07.964
+!MESSAGE Boot LS startup time from start to initialized: 3652ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:08.210
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.SbiDJMSOisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:08.211
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:08.212
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:08.213
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:08.215
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:08.216
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.SbiDJMSO => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:08.252
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:08.259
+!MESSAGE buffering callback sts4.classpath.SbiDJMSO algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:08.260
+!MESSAGE executing callback sts4.classpath.SbiDJMSO 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:48:08.852
+!MESSAGE executing callback sts4.classpath.SbiDJMSO SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:44.603
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.SbiDJMSO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:44.604
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.SbiDJMSO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:44.606
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:44.607
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.SbiDJMSO => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:49.690
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:49.692
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@36b4cbb8[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:49.693
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.051
+!MESSAGE Boot LS startup time from start to initialized: 3357ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.263
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.lwNGQBlFisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.264
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.265
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.267
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.267
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.268
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.lwNGQBlF => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.275
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.282
+!MESSAGE buffering callback sts4.classpath.lwNGQBlF algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.283
+!MESSAGE executing callback sts4.classpath.lwNGQBlF 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.827
+!MESSAGE executing callback sts4.classpath.lwNGQBlF SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.830
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.lwNGQBlF
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.831
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.lwNGQBlF
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.832
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:49:53.834
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.lwNGQBlF => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:47.102
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:47.103
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@36b4cbb8[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:47.104
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:51.862
+!MESSAGE Boot LS startup time from start to initialized: 4753ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:52.136
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kBDvzVeJisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:52.138
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:52.141
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:52.145
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:52.148
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:52.149
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kBDvzVeJ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:52.157
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:52.165
+!MESSAGE buffering callback sts4.classpath.kBDvzVeJ algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:52.167
+!MESSAGE executing callback sts4.classpath.kBDvzVeJ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:50:52.905
+!MESSAGE executing callback sts4.classpath.kBDvzVeJ SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 15:54:19.640
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:58:58.732
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.kBDvzVeJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:58:58.733
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.kBDvzVeJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:58:58.734
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:58:58.735
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.kBDvzVeJ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:11.857
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:11.858
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@36b4cbb8[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:11.860
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:15.470
+!MESSAGE Boot LS startup time from start to initialized: 3609ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:15.719
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.GimpADZuisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:15.721
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:15.722
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:15.723
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:15.724
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:15.725
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.GimpADZu => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:15.733
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:15.739
+!MESSAGE buffering callback sts4.classpath.GimpADZu algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:15.740
+!MESSAGE executing callback sts4.classpath.GimpADZu 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 15:59:16.294
+!MESSAGE executing callback sts4.classpath.GimpADZu SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:01:32.462
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:14:36.555
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.GimpADZu
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:14:36.556
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.GimpADZu
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:14:36.558
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:14:36.559
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.GimpADZu => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:00.710
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:00.713
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@36b4cbb8[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:00.715
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:04.934
+!MESSAGE Boot LS startup time from start to initialized: 4218ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:05.119
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.uMFLMJZxisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:05.120
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:05.121
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:05.123
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:05.123
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:05.124
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.uMFLMJZx => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:05.132
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:05.138
+!MESSAGE buffering callback sts4.classpath.uMFLMJZx algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:05.139
+!MESSAGE executing callback sts4.classpath.uMFLMJZx 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:15:05.674
+!MESSAGE executing callback sts4.classpath.uMFLMJZx SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:13.409
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:19.338
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:20.140
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:21.552
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:21.642
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.endParse(CompletionParser.java:6213)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:11636)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.dietParse(CompletionParser.java:5427)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:2125)
+	at org.eclipse.jdt.internal.core.Openable.codeComplete(Openable.java:136)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:367)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:357)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.internalComputeCompletionProposals(JavaCompletionProposalComputer.java:256)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.computeCompletionProposals(JavaCompletionProposalComputer.java:218)
+	at org.eclipse.jdt.internal.ui.text.java.JavaTypeCompletionProposalComputer.computeCompletionProposals(JavaTypeCompletionProposalComputer.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:23.772
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:24.820
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:25.900
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:27.784
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:28.595
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:29.706
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:31.632
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:31.838
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:34.619
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:35.815
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:36.111
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.endParse(CompletionParser.java:6213)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:11636)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.dietParse(CompletionParser.java:5427)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:2125)
+	at org.eclipse.jdt.internal.core.Openable.codeComplete(Openable.java:136)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:367)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:357)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.internalComputeCompletionProposals(JavaCompletionProposalComputer.java:256)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.computeCompletionProposals(JavaCompletionProposalComputer.java:218)
+	at org.eclipse.jdt.internal.ui.text.java.JavaTypeCompletionProposalComputer.computeCompletionProposals(JavaTypeCompletionProposalComputer.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:37.217
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.endParse(CompletionParser.java:6213)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:11636)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.dietParse(CompletionParser.java:5427)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:2125)
+	at org.eclipse.jdt.internal.core.Openable.codeComplete(Openable.java:136)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:367)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:357)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.internalComputeCompletionProposals(JavaCompletionProposalComputer.java:256)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.computeCompletionProposals(JavaCompletionProposalComputer.java:218)
+	at org.eclipse.jdt.internal.ui.text.java.JavaTypeCompletionProposalComputer.computeCompletionProposals(JavaTypeCompletionProposalComputer.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:38.063
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:38.096
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.endParse(CompletionParser.java:6213)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:11636)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.dietParse(CompletionParser.java:5427)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:2125)
+	at org.eclipse.jdt.internal.core.Openable.codeComplete(Openable.java:136)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:367)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:357)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.internalComputeCompletionProposals(JavaCompletionProposalComputer.java:256)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.computeCompletionProposals(JavaCompletionProposalComputer.java:218)
+	at org.eclipse.jdt.internal.ui.text.java.JavaTypeCompletionProposalComputer.computeCompletionProposals(JavaTypeCompletionProposalComputer.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:38.920
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.endParse(CompletionParser.java:6213)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:11636)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.dietParse(CompletionParser.java:5427)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:2125)
+	at org.eclipse.jdt.internal.core.Openable.codeComplete(Openable.java:136)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:367)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:357)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.internalComputeCompletionProposals(JavaCompletionProposalComputer.java:256)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.computeCompletionProposals(JavaCompletionProposalComputer.java:218)
+	at org.eclipse.jdt.internal.ui.text.java.JavaTypeCompletionProposalComputer.computeCompletionProposals(JavaTypeCompletionProposalComputer.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:39.487
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.endParse(CompletionParser.java:6213)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:11636)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.dietParse(CompletionParser.java:5427)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:2125)
+	at org.eclipse.jdt.internal.core.Openable.codeComplete(Openable.java:136)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:367)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:357)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.internalComputeCompletionProposals(JavaCompletionProposalComputer.java:256)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.computeCompletionProposals(JavaCompletionProposalComputer.java:218)
+	at org.eclipse.jdt.internal.ui.text.java.JavaTypeCompletionProposalComputer.computeCompletionProposals(JavaTypeCompletionProposalComputer.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:39.538
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:40.434
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.endParse(CompletionParser.java:6213)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:11636)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.dietParse(CompletionParser.java:5427)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:2125)
+	at org.eclipse.jdt.internal.core.Openable.codeComplete(Openable.java:136)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:367)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:357)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.internalComputeCompletionProposals(JavaCompletionProposalComputer.java:256)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.computeCompletionProposals(JavaCompletionProposalComputer.java:218)
+	at org.eclipse.jdt.internal.ui.text.java.JavaTypeCompletionProposalComputer.computeCompletionProposals(JavaTypeCompletionProposalComputer.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:41.145
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.endParse(CompletionParser.java:6213)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:11636)
+	at org.eclipse.jdt.internal.codeassist.complete.CompletionParser.dietParse(CompletionParser.java:5427)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:2125)
+	at org.eclipse.jdt.internal.core.Openable.codeComplete(Openable.java:136)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:367)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:357)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.internalComputeCompletionProposals(JavaCompletionProposalComputer.java:256)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.computeCompletionProposals(JavaCompletionProposalComputer.java:218)
+	at org.eclipse.jdt.internal.ui.text.java.JavaTypeCompletionProposalComputer.computeCompletionProposals(JavaTypeCompletionProposalComputer.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:16:41.226
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:17:16.890
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-05-26 16:22:25.500
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleEqualsAndHashCode failed
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.List.sort(java.util.Comparator)" because "list" is null
+	at java.base/java.util.Collections.sort(Collections.java:179)
+	at lombok.core.handlers.InclusionExclusionUtils.handleEqualsAndHashCodeMarking(InclusionExclusionUtils.java:227)
+	at lombok.eclipse.handlers.HandleEqualsAndHashCode.handle(HandleEqualsAndHashCode.java:114)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnField(TransformEclipseAST.java:245)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:110)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:79)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:222)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:183)
+	at lombok.eclipse.TransformEclipseAST.transform_swapped(TransformEclipseAST.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:130)
+	at lombok.launch.PatchFixesHider$Transform.transform_swapped(PatchFixesHider.java:214)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.endParse(Parser.java:11865)
+	at org.eclipse.jdt.internal.core.util.CommentRecorderParser.endParse(CommentRecorderParser.java:135)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.endParse(SourceElementParser.java:830)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13066)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13293)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:13250)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1122)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:273)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:193)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:28:38.582
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.uMFLMJZx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:28:38.584
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.uMFLMJZx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:28:38.585
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:28:38.586
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.uMFLMJZx => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:26.618
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:26.619
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@36b4cbb8[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:26.628
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:30.296
+!MESSAGE Boot LS startup time from start to initialized: 3667ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:30.507
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.TSnWGdCIisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:30.508
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:30.509
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:30.511
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:30.511
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:30.512
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.TSnWGdCI => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:30.520
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:30.527
+!MESSAGE buffering callback sts4.classpath.TSnWGdCI algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:30.528
+!MESSAGE executing callback sts4.classpath.TSnWGdCI 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:29:31.080
+!MESSAGE executing callback sts4.classpath.TSnWGdCI SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:34:07.432
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.TSnWGdCI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:34:07.433
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.TSnWGdCI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:34:07.435
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:34:07.436
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.TSnWGdCI => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:15.550
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:15.551
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@36b4cbb8[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:15.552
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:19.311
+!MESSAGE Boot LS startup time from start to initialized: 3756ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:19.560
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ghHXBgpgisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:19.562
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:19.563
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:19.564
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:19.565
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ghHXBgpg => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:19.566
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:19.578
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:19.585
+!MESSAGE buffering callback sts4.classpath.ghHXBgpg algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:19.586
+!MESSAGE executing callback sts4.classpath.ghHXBgpg 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:35:20.273
+!MESSAGE executing callback sts4.classpath.ghHXBgpg SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:36:40.572
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ghHXBgpg
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:36:40.573
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ghHXBgpg
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:36:40.574
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:36:40.575
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ghHXBgpg => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:43.043
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:43.044
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@36b4cbb8[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:43.045
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:47.152
+!MESSAGE Boot LS startup time from start to initialized: 4106ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:47.364
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.yzxLdebHisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:47.365
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:47.367
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:47.368
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:47.369
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.yzxLdebH => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:47.371
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:47.381
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:47.387
+!MESSAGE buffering callback sts4.classpath.yzxLdebH algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:47.389
+!MESSAGE executing callback sts4.classpath.yzxLdebH 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:37:48.011
+!MESSAGE executing callback sts4.classpath.yzxLdebH SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:38:46.612
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.yzxLdebH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:38:46.613
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.yzxLdebH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:38:46.614
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:38:46.617
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.yzxLdebH => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:22.414
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:22.422
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@36b4cbb8[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:22.423
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:27.336
+!MESSAGE Boot LS startup time from start to initialized: 4912ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:27.588
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.FQMjRyfjisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:27.591
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:27.602
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:27.603
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:27.607
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:27.608
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.FQMjRyfj => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:27.615
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:27.623
+!MESSAGE buffering callback sts4.classpath.FQMjRyfj algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:27.624
+!MESSAGE executing callback sts4.classpath.FQMjRyfj 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:39:28.374
+!MESSAGE executing callback sts4.classpath.FQMjRyfj SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:07.962
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.FQMjRyfj
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:07.963
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.FQMjRyfj
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:07.964
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:07.966
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.FQMjRyfj => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:21.156
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:21.157
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@36b4cbb8[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:21.158
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:24.467
+!MESSAGE Boot LS startup time from start to initialized: 3308ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:24.627
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.QvIZkUyiisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:24.628
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:24.629
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:24.630
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:24.631
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:24.632
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.QvIZkUyi => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:24.639
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:24.644
+!MESSAGE buffering callback sts4.classpath.QvIZkUyi algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:24.645
+!MESSAGE executing callback sts4.classpath.QvIZkUyi 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:40:25.126
+!MESSAGE executing callback sts4.classpath.QvIZkUyi SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:16.009
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QvIZkUyi
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:16.010
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.QvIZkUyi
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:16.011
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:16.012
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QvIZkUyi => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:30.958
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:30.959
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@36b4cbb8[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:30.960
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:34.447
+!MESSAGE Boot LS startup time from start to initialized: 3484ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:34.616
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.lvbLEabJisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:34.617
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:34.618
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:34.619
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:34.620
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:34.621
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.lvbLEabJ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:34.628
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:34.634
+!MESSAGE buffering callback sts4.classpath.lvbLEabJ algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:34.635
+!MESSAGE executing callback sts4.classpath.lvbLEabJ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 16:54:35.150
+!MESSAGE executing callback sts4.classpath.lvbLEabJ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 17:14:08.073
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.lvbLEabJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 17:14:08.074
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.lvbLEabJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 17:14:08.076
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 17:14:08.077
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.lvbLEabJ => OK
+!SESSION 2022-05-26 21:57:51.350 -----------------------------------------------
+eclipse.buildId=4.14.1.202204250734
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-05-26 21:58:04.021
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-26 21:58:04.021
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@38ad86b1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@73ff7a54,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-26 21:58:04.021
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@375ff309,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@337c0ee4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-26 21:58:10.407
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\joaov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:36.848
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:36.849
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7f230332[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:36.869
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:36.986
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:44.336
+!MESSAGE Boot LS startup time from start to initialized: 7449ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:44.613
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VkZihLHkisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:44.617
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:44.622
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:44.624
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:44.625
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:44.626
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VkZihLHk => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:44.656
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:44.662
+!MESSAGE buffering callback sts4.classpath.VkZihLHk algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:44.664
+!MESSAGE executing callback sts4.classpath.VkZihLHk 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:45.322
+!MESSAGE executing callback sts4.classpath.VkZihLHk SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:49.687
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VkZihLHk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:49.688
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.VkZihLHk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:49.690
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 21:58:49.691
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VkZihLHk => OK
+
+!ENTRY org.eclipse.ui 2 2 2022-05-26 22:01:07.965
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:19.573
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:19.574
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7f230332[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:19.575
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:27.500
+!MESSAGE Boot LS startup time from start to initialized: 7923ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:27.734
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.bOhKUoBhisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:27.735
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:27.736
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:27.738
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:27.739
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:27.739
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.bOhKUoBh => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:27.749
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:27.756
+!MESSAGE buffering callback sts4.classpath.bOhKUoBh algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:27.757
+!MESSAGE executing callback sts4.classpath.bOhKUoBh 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:01:28.413
+!MESSAGE executing callback sts4.classpath.bOhKUoBh SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:10:07.330
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.bOhKUoBh
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:10:07.331
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.bOhKUoBh
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:10:07.333
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:10:07.334
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.bOhKUoBh => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:29.005
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:29.007
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7f230332[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:29.007
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:32.842
+!MESSAGE Boot LS startup time from start to initialized: 3832ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:33.096
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.DUuELeXjisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:33.097
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:33.098
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:33.099
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:33.100
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:33.101
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.DUuELeXj => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:33.110
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:33.116
+!MESSAGE buffering callback sts4.classpath.DUuELeXj algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:33.117
+!MESSAGE executing callback sts4.classpath.DUuELeXj 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:13:34.977
+!MESSAGE executing callback sts4.classpath.DUuELeXj SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:18:23.678
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DUuELeXj
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:18:23.679
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.DUuELeXj
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:18:23.680
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:18:23.682
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DUuELeXj => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:38.047
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:38.048
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7f230332[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:38.049
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.jface 2 0 2022-05-26 22:21:38.366
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-26 22:21:38.366
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4b619d2f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6073702a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:41.844
+!MESSAGE Boot LS startup time from start to initialized: 3793ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:42.003
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.EhbyuwVtisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:42.004
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:42.005
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:42.007
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:42.008
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:42.009
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.EhbyuwVt => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:42.017
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:42.023
+!MESSAGE buffering callback sts4.classpath.EhbyuwVt algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:42.024
+!MESSAGE executing callback sts4.classpath.EhbyuwVt 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:21:42.545
+!MESSAGE executing callback sts4.classpath.EhbyuwVt SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.launching 4 150 2022-05-26 22:23:01.089
+!MESSAGE Referenced classpath provider does not exist: org.springframework.ide.eclipse.boot.launch.BootMavenClassPathProvider
+
+!ENTRY org.eclipse.jdt.launching 4 150 2022-05-26 22:23:01.090
+!MESSAGE Referenced classpath provider does not exist: org.springframework.ide.eclipse.boot.launch.BootMavenClassPathProvider
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:12.136
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.EhbyuwVt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:12.138
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.EhbyuwVt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:12.139
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:12.140
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.EhbyuwVt => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:14.900
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:14.901
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7f230332[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:14.902
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:18.917
+!MESSAGE Boot LS startup time from start to initialized: 4014ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:19.082
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VpNMZGBJisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:19.083
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:19.085
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:19.086
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:19.087
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:19.088
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VpNMZGBJ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:19.096
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:19.102
+!MESSAGE buffering callback sts4.classpath.VpNMZGBJ algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:19.103
+!MESSAGE executing callback sts4.classpath.VpNMZGBJ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:29:19.657
+!MESSAGE executing callback sts4.classpath.VpNMZGBJ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:49:34.228
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VpNMZGBJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:49:34.230
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.VpNMZGBJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:49:34.231
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:49:34.233
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VpNMZGBJ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:15.689
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:15.691
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7f230332[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:15.693
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:19.517
+!MESSAGE Boot LS startup time from start to initialized: 3821ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:19.765
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.CAgjDBXkisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:19.767
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:19.768
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:19.769
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:19.770
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:19.771
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.CAgjDBXk => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:19.779
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:19.785
+!MESSAGE buffering callback sts4.classpath.CAgjDBXk algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:19.786
+!MESSAGE executing callback sts4.classpath.CAgjDBXk 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 22:50:20.376
+!MESSAGE executing callback sts4.classpath.CAgjDBXk SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:02:55.398
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.CAgjDBXk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:02:55.399
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.CAgjDBXk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:02:55.400
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:02:55.401
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.CAgjDBXk => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:12.630
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:12.631
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7f230332[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:12.633
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:16.624
+!MESSAGE Boot LS startup time from start to initialized: 3990ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:16.860
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.EKBTtUsOisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:16.861
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:16.863
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:16.864
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:16.865
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:16.865
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.EKBTtUsO => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:16.873
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:16.878
+!MESSAGE buffering callback sts4.classpath.EKBTtUsO algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:16.879
+!MESSAGE executing callback sts4.classpath.EKBTtUsO 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:17.478
+!MESSAGE executing callback sts4.classpath.EKBTtUsO SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:20.318
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.EKBTtUsO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:20.320
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.EKBTtUsO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:20.321
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:03:20.322
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.EKBTtUsO => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:03.678
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:03.681
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7f230332[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:03.682
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:07.366
+!MESSAGE Boot LS startup time from start to initialized: 3681ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:07.574
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.MAxJhRrZisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:07.575
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:07.576
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:07.577
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:07.578
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:07.579
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.MAxJhRrZ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:07.587
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:07.594
+!MESSAGE buffering callback sts4.classpath.MAxJhRrZ algafood-api false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:07.594
+!MESSAGE executing callback sts4.classpath.MAxJhRrZ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:04:08.187
+!MESSAGE executing callback sts4.classpath.MAxJhRrZ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:10:59.194
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.MAxJhRrZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:10:59.195
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.MAxJhRrZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:10:59.197
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-26 23:10:59.198
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.MAxJhRrZ => OK

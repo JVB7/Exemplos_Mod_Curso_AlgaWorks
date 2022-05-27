@@ -249,6 +249,34 @@
 		   @Column(name="taxa_frete", nullable=false)  // ISSO NÃO VAI FAZER A COLUNA, NÃO ACEITAR NULO, COMO TBM INFLUENCIARA NO TIPO JOIN (fetching)
         	   private BigDecimal taxaFrete;
 
+# Desafio: mapeando entidades
+
+	1º Criando as entidades:
+
+		=> Estado, Cidade, FormaPegamento, Permissao
+
+		OBS: Adicionaremos as anotações do JPA e do Lombok: @Data, @EqualsAndHashCode(onlyExplicitlyIncluded = true), @Entity
+
+	2º Criando as interfaces dos repositórios
+	
+		=> EstadoRepository, CidadeRepository, FormaPagamentoRepository, PermissaoRepository
+		
+		=> Metodos:
+			   List<Classe> listar();
+        		   Classe buscar(Long id);
+		           Classe salvar(Classe objeto);
+		           void remover(Classe objeto);
+
+	3º Implementando os repositórios
+
+		=> EstadoRepositoryImp, CidadeRepositoryImp, FormaPagamentoRepositoryImp, PermissaoRepositoryImp
+
+	4º Popular nossas tabelas
+
+	5º Criando as classes para testarmos
+
+		=> ConsultaCidadeMain, ConsultarFormaPagamentoMain, ConsultarPermissaoMain
+
 
 
 
