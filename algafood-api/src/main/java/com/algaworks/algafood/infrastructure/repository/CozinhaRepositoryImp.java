@@ -19,7 +19,7 @@ public class CozinhaRepositoryImp implements CozinhaRepository {
 	
 	@Override
 	public List<Cozinha> todas() {
-		return null;
+		return manager.createQuery("from Cozinha", Cozinha.class).getResultList();
 	}
 
 	@Transactional // executa o metodo dentro de uma transação

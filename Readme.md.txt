@@ -278,6 +278,186 @@
 		=> ConsultaCidadeMain, ConsultarFormaPagamentoMain, ConsultarPermissaoMain
 
 
+*********************************************************** ( MODULO 4 ) **************************************************************************
+
+(USAR API) -- REQUISIÇÃO -- > PROVEDOR DA API   // A RESPOSTA PODE SER NO FORMATO JSON OU XML
+      
+
+#4.1 O que é REST? (BASEADO NA TESE, Projeto de arquitetura de Software baseado em rede)
+
+	=> São prinncípios de arquitetura, para os desenvolvedores criarem suas APIs
+
+	=> REpresentational State Transfer (não é uma tecnoligia), é uma especificação ou modelo arquitetural
+	=> Especifica a forma de comunicação de componentes na web, independente da linguagem de programação usada
+	=> São regras CONSTRAINTS
+	
+	=> CLIENTE --> requisição --> Provedor
+	=> CLIENTE <-- resposta <-- Rest API
+
+	=> Vantagens de Rest:
+		-> Separaçao entre cliente e servidor
+		-> Escalabilidade
+		-> Indepêndencia de linguagem
+
+
+#4.2. Conhecendo as constraints do REST (Princípios de aplicações distribuídas)
+
+	=> CONSTRAINTS:
+		1º Cliente - Servido: haverá a comunicação/cosumo da API. Deve existe a evolução das aplicações, independente da outra.
+			     Um cliente ou servidor pode ser substituido desde que as interfaces permaneção intactas
+
+		2º Stateliss: Sem estado, ou seja a aplicação não deve ter estados. (inspirado do protocolo http)
+			      Logo uma requisição feita deve conter tudo que é nescessário para que seja devidamente processada
+			      O servidor não sabe quem é o cliente
+
+				(** JWT- JSON Web Token **) // Gera um token e armazena no cliente, tirando a responsabilidade do servidor
+				- padrão da Internet para a criação de dados com assinatura opcional e/ou criptografia 
+				cujo payload(Carga útil) contém o JSON que afirma algum número de declarações
+
+		3º Cache: A API pode fazer chache das respostas das requisições,
+			  Logo na proxima requisição antes da requisição chegar no provedor/servidor o cache entra em ação 
+			  Proxy: servidor intermediario para fazer chache de determinadas requisições
+			  Diminui o numero de hits na rede
+	
+			  OBS: não em toda aplicação, quando nescessário
+
+		4º Interface Uniforme: Um conjuntos de operações bem definidos do sistema
+
+		
+		=> Em resumo, as API deve ser desenvolvidas usando o verbo http, de que as interfaces funcione como um contrato,
+		   onde o servidor e o cliente posso se comunicar de uma forma mais previsivel,
+		   adicionando links entre os recursos e devolvendo uma resposta com informações padronizadas.
+
+		5º Sistema em Camadas: Significa entre o Cliente e Servidor, pode existir outros servidores(serv_segurança, serv_chace_,...) no meio do caminho 
+				       Não pode afetar a requisição nem a resposta
+	
+		6º Código sob demanda: Opcional, pouco usa nas APIs,
+				       O servidor pode mandar algum código para ser executado no cliente
+
+
+
+
+#4.3. Diferença entre REST e RESTful
+
+	=> REST: é o estilo arquiterural que possui as constraints, a especifição.
+	=> RESTful: é uma API construida em conformidade com as constraints, segue todas as constrainst religiosamente.
+
+#4.4. Desenvolvedores de REST APIs puristas e pragmáticos
+
+#4.5. Conhecendo o protocolo HTTP   (SEGUIR AS SEMÂNTICAS DOS VERBOS HTTP)
+
+	=> 'REQUISIÇÃO', composição da requsição:
+
+
+		     **LADO CLIENTE**				**LADO SERVIDOR**
+
+		GET /artigo-rest HTTP/1.1    --RESPOSTA--> HTTP/1.1 200 ok  (404 ou 500)
+		Accept: application/json		   Content-Type: application/json
+		Host: www.alura.com 			   {
+								"titulo": "O que é REST",
+								"conteudo": "o rest foi criado..."
+							   }
+
+	
+		[MÉTODO] [URI] HTTP/[VERSÃO]               Post /produto HTTP/1.1 
+		[CABEÇALHO]				   Content-Type: application/json
+							   Accept: application/json
+
+		[CORPO/PAYLOAD]				   {
+								"nome": "Notebook i7",
+								"preco": "2100.0"
+							   }		
+		
+		--> [MÉTODO]: ação a ser realizada
+				GET: deve ser devolvido uma resposta de uma requisição
+				POST: submeti dados para o servidor	// adicionar dados no banco
+				PUT: atulização
+				DELETE: deletar	
+
+		--> [URI]: é  um caminha que identifica oq queremos dentro do servidor http
+
+		--> [CABEÇALHO]: informação/valores chaves sobre a requisição, que pode ser usado pelo servidor
+				
+				Content-Type: application/json: os dados estão sendo enviados no formato JSON
+				Accept: application/json: A resposta deve ser no formato JSON
+
+
+	=> 'RESPOSTA'
+
+		HTTP/[VERSÃO] [STATUS]	                   HTTP/1.1  201 Created
+		[CABEÇALHO]				   Content-Type: application/json
+
+		[CORPO]					   {
+								"codigo": 331,
+								"nome": "Notebook i7",
+								"preco": "2100.0"
+							   }
+
+#4.6. Usando o protocolo HTTP
+
+	=> Usando uma API do github por meio de requisição http, endPoint-termino de ponto
+
+#4.7. Instalando e testando o Postman
+
+	=> Será usado para testar a Rest API que será desenvolvida, organiza as nossa requsições
+
+	=> Não preciará todas vez informar os verbos http
+	
+	=> Usado para fazer as requisições na Rest API (umas das funcionalidades é ser um client de um rest api)
+
+#4.8. Entendendo o que são Recursos REST
+
+	=> É qualquer coisa posta na web (documento, page, video), algo de importancia que pode ser referenciado no software
+	=> Singleton Resource - unico recurso (instancia de um objeto de um determinado tipo)
+	=> Collection Resource - Coleção de recursos (Uma coleção contém zero ou muitos recursos do mesmo tipo)
+
+
+#4.9. Identificando recursos REST
+	
+	=> URI - Uniform Resource Identifier: 
+		-> Rest usa URI para identificar um recurso na web
+		   ex URI: /listarProdutos -- correto (substantivo) --> /produtos
+
+	=> URI vs URL:
+		-> URL: é um tipo de URI, porém além de identificar, tambem localiza o recurso onde está o mesmo, qual o recurso para chegar até ele 
+
+
+4.10. Modelando e requisitando um Collection Resource com GET
+	
+	** Criar nosso primeiro serviço Rest **
+
+	1º Criar o pacote .api.controller e a classe CozinhaController 
+
+		=> Séra responsavel por receber requisições 
+
+		=> CozinhaController será um componente do Spring, logo terá a notação: 
+			::@Controller
+		=> Precisamos mapear esse controlador, pois as requisições precisam o encontrar:
+			::@RequestMapping("/cozinhas")
+
+	2º Ao encontrar o CozinhaController, precisanmos seta um metodos para ser executado
+		
+		=> Mapear um metodo:
+			::@GetMapping    // verbo Get do http ou seja, quando fizer uma requisição 'GET /cozinhas HTTP/1.1' ira cair nesse metodo, e a resposta lista 					de cozinhas
+
+	3º Para evitar um erro na resposta, precisamos colocar a notação:
+
+		::@ResponseBody
+
+
+	4º Existe uma notação que é composta pela notação @Controller e @Response, ele é:
+		
+		::@RestController
+
+	5º Criar um requisição no Postman:
+
+		=> Usamos o ver Get:localhost:8080/cozinhas
+		=> A resposta é uma arquivo Json, contendo os objetos cozinhas
+
+
+
+
+
 
 
 
