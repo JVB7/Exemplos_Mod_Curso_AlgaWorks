@@ -454,7 +454,9 @@
 		=> Usamos o ver Get:localhost:8080/cozinhas
 		=> A resposta é uma arquivo Json, contendo os objetos cozinhas
 
+#4.11. Desafio: collection resource de estados
 
+	=> Será criado um serviço Rest para a classe Estado
 
 
 
