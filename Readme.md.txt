@@ -506,6 +506,15 @@
 		  public Cozinha buscar(@PathVariable("cozinhaid") Long id) {...}
 
 
+#4.15. Customizando as representações XML e JSON com @JsonIgnore, @JsonProperty e @JsonRootName
+
+	=> Setando um nome para propriedade da classe, para o mesmo ser usado durante apresentação/resposta da requisição
+		
+		@JsonProperty("titulo")
+		private String nome; 
+
+		@JsonIgnore // vai ignora a propriedade
+		@JsonRootName("cozinhas") // porId
 
 		
 
