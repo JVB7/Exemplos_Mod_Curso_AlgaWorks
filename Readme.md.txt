@@ -459,6 +459,55 @@
 	=> Será criado um serviço Rest para a classe Estado
 
 
+#4.12. Representações de recursos e content negotiation
+
+	=> Representações de recursos: JSON, XML, PNG
+
+	=> Content negotiation: é o formato do conteudo negociado para ser retornado
+
+	1º Qual o melhor formato para representar um recurso na API ?
+		R: O mais usado é o Json
+
+
+#4.13. Implementando content negotiation para retornar JSON ou XML
+
+	=> Especificar o midia type: no cabeçalho (Headers) de forma explicita
+		     key:	 value:
+		:: Accept:   application/Json
+
+	=> Para funcionar o formato XML é nescessário adicionar a dependencia no arquivo pom.xml
+
+<dependency>
+	<groupId>com.fasterxml.jackson.dataformat</groupId>
+	<artifactId>jackson-dataformat-xml</artifactId>
+</dependency>
+
+	=> Espeficicando para o metododo o tipo de retorno da requisição:
+		:: @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)  // logo nosso endpoint só aceita o formato xml
+		:: @GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})  // logo nosso endpoint só aceita o formato xml
+
+		OU (2ºop)
+		
+		::@RequestMapping(value="/cozinha", produces = MediaType.APPLICATION_JSON_VALUE)
+
+#4.14. Consultando Singleton Resource com GET e @PathVariable
+
+	1º Criar um metodo para buscar o objeto:
+		:: public Cozinha buscar(){...}
+
+	2º Mapear a rota para esse metodo criado:
+
+		::@GetMapping("/{cozinhaid}")          // criamos uma continuação que vai concatenar com a rota principal @RequestMapping("/cozinhas")
+		  public Cozinha buscar(Long id) {...}
+
+	3º Precisamosfazer baint, referenciar a variavel cozinhaid com id
+
+		::@GetMapping("/{cozinhaid}")
+		  public Cozinha buscar(@PathVariable("cozinhaid") Long id) {...}
+
+
+
+		
 
 
 
