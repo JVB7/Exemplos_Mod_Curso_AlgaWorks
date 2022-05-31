@@ -624,6 +624,49 @@
 		return ResponseEntity.notFound().build();
 
 
+#4.22. Status HTTP para collection resource vazia: qual usar?
+
+	-> Nesse caso o retorno 200 está correto
+
+
+
+#4.23. Modelando e implementando a inclusão de recursos com POST
+
+	-> Inclusão de uma cozinha
+
+	1º Como identificar ?
+		- POST /cozinhas   // adicione mais um nessa coleção, mesmo URI
+
+	2º Criar um metododo adicionar 
+
+		- Logo a notação será: @PostMapping
+
+	3º Oparametro/objeto recebera o corpo da requisção (@RequestBody)
+
+		- public void adicionar(@RequestBody Cozinha cozinha) {..}
+
+	3º Criar uma requisição POST
+
+		- usando a mesmaa URL: localhost:8080/cozinhas
+		- raw:
+{
+	"nome":"Japonesa"
+}
+
+	4º Criar um status de retorno que tudo ocorreu e foi criado o novo objeto
+
+		-@ResponseStatus(HttpStatus.CREATED) // status 201 
+
+	5º Devemos retornar no corpo da respota o objeto criado
+	
+		- public Cozinha adicionar(@RequestBody Cozinha cozinha) { ... }
+
+		
+
+		
+
+
+
 		
 
 
