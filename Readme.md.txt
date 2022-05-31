@@ -674,7 +674,7 @@
 
 4.25. Modelando e implementando a atualização de recursos com PUT
 	
-	-> Atualização de uma cozinha
+	-> Atualização de uma cozinha/recurso
 
 	1º Qual o URI ?
 		- /cozinhas/{cozinhaid}
@@ -707,11 +707,53 @@
 	7º Retorna com uma reposta 'sucesso' passando o objeto atualizado
 
 		- return ResponseEntity.ok(cozinhaAtual);
+
+#4.26. Modelando e implementando a exclusão de recursos com DELETE
+
+	-> Deleta um recurso
+
+	1º Qual URI que identifica o recruso ?
+
+		-  /cozinhas/{cozinhaid}
+
+	2º Criar novo metodo (Classe CozinhaController)
 		
+		- @DeleteMapping("/{cozinhaid}")
+	          public ResponseEntity<Cozinha> remover(@PathVariable("cozinhaid") Long id){...}
+
+	3º Buscar objeto e verificar se existe
+
+		- Cozinha cozinha = cozinhaRepository.buscar(id);
+
+	4º Remover objeto
+
+		if(cozinha != null) {
+			cozinhaRepository.remover(cozinha);
+//			return ResponseEntity.ok(cozinha); como não retornamos nada não podemos é correto usar o status 200
+
+			return ResponseEntity.status(HttpStatus.NO_CONTENT); // SEM CONTEUDO // status 204
+			OU
+			return ResponseEntity.noContent().build(); // status 204
+		}
+
+
+	5º Criar try catch para tratar a cozinha que não pode ser excluida (foreign key)
+
+		try {
+			Cozinha cozinha = cozinhaRepository.porId(id);
+			System.out.println(cozinha.getNome());
+			if(cozinha != null) {
+				cozinhaRepository.remover(cozinha);
+	//			return ResponseEntity.ok(cozinha); como não retornamos nada não podemos é correto usar o status 200
+				return ResponseEntity.noContent().build(); // status 204
+			}
+		}catch(DataIntegrityViolationException e){
+			return ResponseEntity.status(HttpStatus.CONFLICT).build();
+			// é interessante retorna um mensagem -- aula: modelagem  de erro/problema
+			// tratamento de exception
+		}
+
 		
-
-
-
 		
 
 

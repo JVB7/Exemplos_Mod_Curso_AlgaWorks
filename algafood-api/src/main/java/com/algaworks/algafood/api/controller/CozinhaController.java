@@ -4,9 +4,11 @@ import java.util.List;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -62,6 +64,24 @@ public class CozinhaController {
 			return ResponseEntity.ok(cozinhaJaPesistida);
 		}
 		
+		return ResponseEntity.notFound().build();
+	}
+	
+	@DeleteMapping("/{cozinhaid}")
+	public ResponseEntity<Cozinha> remover(@PathVariable("cozinhaid") Long id){
+		try {
+			Cozinha cozinha = cozinhaRepository.porId(id);
+			System.out.println(cozinha.getNome());
+			if(cozinha != null) {
+				cozinhaRepository.remover(cozinha);
+	//			return ResponseEntity.ok(cozinha); como não retornamos nada não podemos é correto usar o status 200
+				return ResponseEntity.noContent().build(); // status 204
+			}
+		}catch(DataIntegrityViolationException e){
+			return ResponseEntity.status(HttpStatus.CONFLICT).build();
+			// é interessante retorna um mensagem -- aula: modelagem  de erro/problema
+			// tratamento de exception
+		}
 		return ResponseEntity.notFound().build();
 	}
 
