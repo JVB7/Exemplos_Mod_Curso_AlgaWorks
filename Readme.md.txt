@@ -753,11 +753,31 @@
 			// tratamento de exception
 		}
 
+
+#4.27. Implementando a camada de domain services (e a importância da linguagem ubíqua)
 		
+	-> É uma operação sem estado que realiza uma tarefa expecifica do domnio
+	-> É criado quando existe um processo do dominio que não é responsabiliddae de uma entidade
+
+	-> O ideal é criar uma classe especifica para fazer as modificações no estado da aplicação
+			- Classe de serviço de dominio
+
+	1º Criar uma classe de serviço
+		no pacote: com.algaworks.algafood.domain.service
+		classe: CadastroCozinhaService
+
+
+	2º É uma classe component notada com @Service (especifico)
 		
+		terá os metodos:
+			public Cozinha salvar(Cozinha cozinha){}
 
+		terá:
+			uma dependencia de CozinhaRepository, ou seja, um ponto de injeçao @Autowired
 
+	3º Na classe CozinhaController terá uma dependencia de CadastroCozinhaService, injeçao @Autowired
 
+		- Logo CozinhaController não precisa acessar diretamente cozinhaRepository
 
 
 
