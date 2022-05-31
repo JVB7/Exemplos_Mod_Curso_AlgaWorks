@@ -780,9 +780,52 @@
 		- Logo CozinhaController não precisa acessar diretamente cozinhaRepository
 
 
+#4.28. Refatorando a exclusão de cozinhas para usar domain services
+
+	1º Dentro CozinhaRepositoryImpl
+	
+		-> modificar o metodo remover(Cozinha cozinha):
+			é nescessario criar o tratamento de exception caso o objeto não exita
+			// SE NÃO EXISTIR LANÇA A EXERÇÃO
+			if(cozinha == null) {
+				throw new EmptyResultDataAccessException(1);
+			}
+	2º Na interface CozinhaRepository:
+
+		-> Moficicar o parametro do metodo remover(Long id)
 
 
+	3º Dentro de CadastroCozinhaService, o metodo excluir tratara duas exerções, usando exerções de negocio:
 
+	public void excluir(Long id) {
+		try {
+			cozinhaRepository.remover(id);
+		}catch(EmptyResultDataAccessException e) {
+			throw new EntidadeNaoEncontradaException(
+					String.format("Não existe um cadastro de cozinha com o código %d", id)); //crida classe extends RuntimeException
+			
+		}catch (DataIntegrityViolationException e) {
+			throw new EntidadeEmUsoException(
+					String.format("Cozinha de código %d não pode ser removida, pois está em uso ", id)); // criada classe extends RuntimeException
+		}
+	}
+
+	-> modificação do metodod de CozinhaController:
+
+	@DeleteMapping("/{cozinhaid}")
+	public ResponseEntity<Cozinha> remover(@PathVariable("cozinhaid") Long id){
+		try {
+			cadastroCozinha.excluir(id);
+			return ResponseEntity.noContent().build();
+			
+		}catch(EntidadeNaoEncontradaException e){
+			return ResponseEntity.noContent().build();
+		}
+		catch(EntidadeEmUsoException e){ // DataIntegrityViolationException Substituida por EntidadeEmUsoException
+			return ResponseEntity.status(HttpStatus.CONFLICT).build();
+		}
+	
+	}
 
 
 
