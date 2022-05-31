@@ -516,6 +516,114 @@
 		@JsonIgnore // vai ignora a propriedade
 		@JsonRootName("cozinhas") // porId
 
+#4.16. Customizando a representação em XML com Wrapper e anotações do Jackson
+
+*********** ideal para quando se sua XML ******************
+
+#4.17. Conhecendo os métodos HTTP
+
+	Idempotência ?
+		R: É possivel alterar mais de uma vez, sem que o resultado da primeira alteração se altere 
+			Não causa efeitos colaterais
+
+	--> GET:
+		- Usado quando é nescessário obter a representação do recurso(s)
+		- Método seguro e tbm idempotente
+		- Pode repetir varias vezes que não vai haver efeitos colaterias
+
+	--> POST:
+		- Usado para criar um novo recurso
+		- Envia um corpo na requisição junto com um payload(dados), para serem submetidos ao servidor
+
+	-->PUT:
+		- Atualiza o recurso por completo
+		- uri junto com o id do objeto em que se quer alterar
+		- Não pode ser usado para uma atualização parcial, pois os campos que não preenchidos novamente seram salvos como vazio.
+		- "pode ser usado para criar novos recursos, mas não é recomendado"
+		- não é seguro mas é idempotente
+
+	--> PATCH:
+		- Atualização de recurso
+		- uri junto com o id do objeto em que se quer alterar
+		- Usado para fazer uma alteração parcial
+		- A implementação é mais complexa, pois é nescessário fazer as validações, tratando os atributos de forma isolada 
+		- não é seguro mas é idempotente
+
+	-->DELETE:
+		- Remoção de recurso
+		- idempotente
+	
+	--> HEAD:
+		- Parecido com o get, porém nunca retorna o corpo, apenas o cabeçalho
+
+	-->OPTIONS:
+		- Retorna uma lista de metodos suportado pelo recurso
+
+# 4.18. Conhecendo os códigos de status HTTP
+
+	--> Experiencia de uso da API
+	--> Toda resposta possui obrigatoriamente um status
+	--> Possui Nível: (sucesso)
+		- Nível 200: 
+			-> 200: requisição executada com sucesso ok
+			-> 201: foi criado um novo recurso com sucesso
+			-> 204: sem conteúdo, mas foi processado com sucesso (exclusão de um recurso) 
+
+		- Nível 300: (redirecionamento)
+			-> 301: a requisição e todas as futuras devem ser redirecionadas para um endereço fornecido no cabeçalho da resposta
+			-> 302: o enedereço exite mas foi alterado temporariamente
+
+		- Nível 400: (erro da parte do consumidor da API) 
+			-> O servidor verficar se a solicitação está correta antes mesmo executar a requisição
+			-> 400: Requisição mal feita (ex: erro de sintax)
+			-> 401: Não autorizado (o client precisa ser autenticado)
+			-> 403: Proibido
+			-> 404: não encontrado
+			-> 405: Método não permitido (o ver usado na requisição não é suportado)
+			-> 406: Não aceito (o servidor não pode responder usando o midia type especificado)
+
+		- Nível 500: (erro da parte do servidor)
+			-> 500: erro interno no servidor (não soube como tratar, exeption)
+			-> 5003: Serviço indisponível (manutenção, sobrecarga)
+
+
+#4.19. Definindo o status da resposta HTTP com @ResponseStatus
+
+	@ResponseStatus(HttpStatus.CREATED)
+
+4.20. Manipulando a resposta HTTP com ResponseEntity
+
+	-> Classe: ResponseEntity
+		metos: status(HttpStatus.FOUND), body(cozinha) builder, ok()
+
+	-> Classe: HttpHeaders
+		metodos: add(HttpHeader.LOCATION, "url") 
+
+
+#4.21. Corrigindo o Status HTTP para resource inexistente
+
+	-> Tratando uma resposta caso o objeto não exitir
+	
+	1º Implementar como retorno o ResponseEnity, para manipular a resposta
+	
+		@GetMapping("/{cozinhaid}")
+		public ResponseEntity<Cozinha> buscar(@PathVariable("cozinhaid") Long id) {...}
+
+	2º Verificar se o objeto exite ?
+
+		Cozinha cozinha = cozinhaRepository.porId(id);
+		
+		if(cozinha != null){
+			return ResponseEntity.ok(cozinha); // sucesso - devolva um obejto
+		}
+
+	3º Caso o objeto não existir ?
+
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).build()  // Não encontrato - devolva o corpo vazio 
+		ou
+		return ResponseEntity.notFound().build();
+
+
 		
 
 
