@@ -661,8 +661,53 @@
 	
 		- public Cozinha adicionar(@RequestBody Cozinha cozinha) { ... }
 
-		
 
+#4.24. Negociando o media type do payload do POST com Content-Type
+
+	-> Fazendo um POST com corpo xml (POSTMAN)
+
+		HEADERS:
+
+		ENVIO - Content-Type: Application/xml
+		RECEBO - Accept: Application/json
+
+
+4.25. Modelando e implementando a atualização de recursos com PUT
+	
+	-> Atualização de uma cozinha
+
+	1º Qual o URI ?
+		- /cozinhas/{cozinhaid}
+
+	2º Criar um metodo que retorna um ResponseEnity<Cozinha> para tratar o retorno/resposta	
+
+		- @PutMapping("/{cozinhaid}")
+		  public ResponseEntity<Cozinha> atualizar(@PathVariable("cozinhaid") Long id, Cozinha cozinha){...}
+	
+	3º Busar o objeto pelo id e então passar o novos valores para esse objeto
+
+		- Cozinha cozinhaJaPesistida = cozinhaRepository.porId(id); 
+
+		- cozinhaJaPesistida.setNome(cozinha.getNome());
+		ou 
+		- BeanUtils.copyProperties(cozinha, cozinhaJaPesistida); // vai levantar uma exerção
+
+	4º Verifiacar se objeto exites 
+
+		-if (cozinhaAtual != null) {..}
+
+	5º Copiar os valares da cozinha para cozinhaJaPersistida ignorando o id, pq o id de cozinha é null
+
+		- BeanUtils.copyProperties(cozinha, cozinhaJaPesistida, "id");
+
+	6º Vamos agora persistir novamente a cozinhaJáPersistida para fazer a atulização no banco usando o metodo salvar
+
+		- cozinhaJáPersistida = cozinhaRepository.salvar(cozinhaJáPersistida);
+
+	7º Retorna com uma reposta 'sucesso' passando o objeto atualizado
+
+		- return ResponseEntity.ok(cozinhaAtual);
+		
 		
 
 
