@@ -1,6 +1,0 @@
-spring.datasource.url = jdbc:mysql://localhost/algafood?creatDatabaseIfNotExist=true&serverTimezone=UTC
-spring.datasource.username=root
-spring.datasource.password=db@Inf0@17
-
-spring.jpa.generate-ddl=true
-spring.jpa.hibernate.ddl-auto=true

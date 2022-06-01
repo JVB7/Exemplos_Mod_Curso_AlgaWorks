@@ -34,7 +34,8 @@ public class CozinhaController {
 	@Autowired
 	private CadastroCozinhaService cadastroCozinha; 
 	
-	@GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+//	@GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+	@GetMapping
 	public List<Cozinha> listar(){
 		return cozinhaRepository.todas(); 
 	}
@@ -59,13 +60,13 @@ public class CozinhaController {
 	
 	@PutMapping("/{cozinhaid}")
 	public ResponseEntity<Cozinha> atualizar(@PathVariable("cozinhaid") Long id,@RequestBody Cozinha cozinha){
-		Cozinha cozinhaJaPesistida = cozinhaRepository.porId(id); 
+		Cozinha cozinhaJaPesistida = cadastroCozinha.buscar(id); 
 		
 		if(cozinhaJaPesistida != null) {
 //			cozinhaJaPesistida.setNome(cozinha.getNome());
 			BeanUtils.copyProperties(cozinha, cozinhaJaPesistida, "id");
 			
-			cozinhaJaPesistida = cozinhaRepository.adicionar(cozinhaJaPesistida);// faz a atualização no banco
+			cozinhaJaPesistida = cadastroCozinha.salvar(cozinhaJaPesistida);// faz a atualização no banco
 			
 			return ResponseEntity.ok(cozinhaJaPesistida);
 		}

@@ -445,7 +445,7 @@
 		::@ResponseBody
 
 
-	4º Existe uma notação que é composta pela notação @Controller e @Response, ele é:
+	4º Existe uma notação que é composta pela notação @Controller e @ResponseBody, ele é:
 		
 		::@RestController
 
@@ -826,6 +826,37 @@
 		}
 	
 	}
+
+
+#4.30. Modelando e implementando a inclusão de recursos de restaurantes
+
+	-> 1º Criar classe serviço 'CadastroRestauranteService'
+
+		- classe responsavel fazer as alterações das entidades restaurantes
+
+		- no metodo salvar:
+			- será verificado se objeto cozinha passo dentro de restaurante existe
+				-Logo, tem que haver uma variavel cozinhaRepository
+				-Se não existe logo levantrá uma exeção
+				-então, RestauranteController tem que trata essa exeção
+					- STATUS IDEAL É 400 - BAD REQUEST - erro na requisição
+						- uma mensagem de retorno para ajudar !!
+
+
+**TOPICOS FUTUROS:  (pensando no consumidor da request)
+	- PADRÃO DE REPRESENTAÇÃO DOS PROBLEMAS
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
