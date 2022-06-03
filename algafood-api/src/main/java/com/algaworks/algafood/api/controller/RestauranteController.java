@@ -2,15 +2,16 @@ package com.algaworks.algafood.api.controller;
 
 import java.util.List;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.algaworks.algafood.domain.exception.EntidadeNaoEncontradaException;
@@ -38,6 +39,26 @@ public class RestauranteController {
 			return ResponseEntity.badRequest().body(e.getMessage());
 			
 		}	
+	}
+	
+	@PutMapping("/{restauranteid}") // endpoint 
+	public ResponseEntity<?> atualizar(@PathVariable Long restauranteid,@RequestBody Restaurante restauranteAtualizado) {
+		
+		Restaurante restaurantePesistido = restauranteRepository.buscar(restauranteid);
+		if(restaurantePesistido != null) {
+			BeanUtils.copyProperties(restauranteAtualizado, restaurantePesistido,"id");
+			try {
+				restaurantePesistido = cadastroRestaurante.salvar(restaurantePesistido);
+				return ResponseEntity.ok(restaurantePesistido);
+				
+			}catch(EntidadeNaoEncontradaException e) {
+				return ResponseEntity.badRequest().body(e.getMessage());
+				
+			}	 
+		}
+		
+		return ResponseEntity.notFound().build();
+		
 	}
 	
 	@GetMapping

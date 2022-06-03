@@ -5,9 +5,11 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.algaworks.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.algaworks.algafood.domain.model.Cidade;
 import com.algaworks.algafood.domain.repository.CidadeRepository;
 
@@ -24,7 +26,12 @@ public class CidadeRepositoryImp implements CidadeRepository {
 
 	@Override
 	public Cidade buscar(Long id) {
-		return manager.find(Cidade.class, id);
+		Cidade cidade = manager.find(Cidade.class, id);
+		if(cidade == null) {
+			throw new EntidadeNaoEncontradaException(String
+					.format("A cidade id %d, não foi encontrada", id));
+		}
+		return cidade;
 	}
 
 	@Transactional
@@ -35,8 +42,13 @@ public class CidadeRepositoryImp implements CidadeRepository {
 
 	@Transactional
 	@Override
-	public void remover(Cidade cidade) {
-		cidade = buscar(cidade.getId());
+	public void remover(Long id) {
+		Cidade cidade = buscar(id);
+		
+		if(cidade == null) {
+			throw new EmptyResultDataAccessException(1);
+		}
+		
 		manager.remove(cidade);
 		
 	}

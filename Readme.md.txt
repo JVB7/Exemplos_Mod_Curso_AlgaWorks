@@ -584,7 +584,7 @@
 
 		- Nível 500: (erro da parte do servidor)
 			-> 500: erro interno no servidor (não soube como tratar, exeption)
-			-> 5003: Serviço indisponível (manutenção, sobrecarga)
+			-> 503: Serviço indisponível (manutenção, sobrecarga)
 
 
 #4.19. Definindo o status da resposta HTTP com @ResponseStatus
@@ -846,6 +846,12 @@
 **TOPICOS FUTUROS:  (pensando no consumidor da request)
 	- PADRÃO DE REPRESENTAÇÃO DOS PROBLEMAS
 
+
+
+
+#4.31. Desafio: Modelando e implementando a atualização de recursos de restaurantes
+
+	-> 
 
 
 
