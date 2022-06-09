@@ -34,3 +34,38 @@
 
 	-> Em tempo de execução o Sprind instancia um repository implementando, com os metodos:
 		- incluir, busar, excluir,...
+
+#5.3. Criando um repositório com Spring Data JPA (SDJ)
+
+**	-> Dependencia - ok
+			Spring-starte-data-Jpa
+
+	-> CozinhaRepository tornara agora uma interface do Sprind Data JPA
+			extends JpaRepository<Classe, Long> que herda tbm de outras classes adiante
+
+#5.4. Refatorando o código do projeto para usar o repositório do SDJ
+	
+	-> 1º CozinhaRepository extende de JpaRepository<Cozinha, Long>
+	-> 2º Apagar CozinhaRepositoryImp
+	-> 3º Refatorando o codigo:
+			-> CozinhaController
+				->listar()
+					findAll();
+					Optional<Cozinha> cozinha = findById(id);   
+					descrição: retorna um valor opcional e não um null
+					verificar se exste algo dentro do Optional<>:
+					if(cozinha.isPresent()) { cozinha.get() }
+			
+			->CadastroCozinhaService
+				->salvar()
+					save(cozinha)
+				->excluir()
+					deleteById(id)
+						- EmptyResultDataAccesException
+
+			->CadastroRestauranteService
+				-> salvar()
+					Cozinha cozinha = cozinhaRepository.findById(id)
+					                     .orElseThrow(() -> new EntidadeNaoEncontrada(
+											 String.format("Não ..... %d", id)
+										 ));
