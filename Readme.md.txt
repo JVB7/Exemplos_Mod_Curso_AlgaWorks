@@ -851,14 +851,70 @@
 
 #4.31. Desafio: Modelando e implementando a atualização de recursos de restaurantes
 
-	-> 
+4.32. Desafio: implementando serviços REST de cidades e estados
 
+#4.33. Analisando solução para atualização parcial de recursos com PATCH
 
+	-> @Patch
 
+	-> REQUISIÇÃO:
+		- Especifica apenas a propriedade em que se quer alterar
 
+	-> METODO (1): 
+		  @PatchMapping("/{restauranteid}")
+		- public ResponseEntity<?> atualizarParcial(@PathVariable Long restauranteid, @RequestBody Restaurante restaurante){...}
+		
+	
+	1º Quando é alterado apenas um campo, os restantes ficam com o valor null
+		1.1º Mas nem sempre siginifica que null é um compa não alterado, podemos sim fazer uma alteração para null, de fato é uma alteração!
+		1.2º Então não podemos simplismente ingnora o campo que está nulo
 
+	2º Criamos então um Map<String, Object> campos
+			       <chave, valor>
+		->@PatchMapping("/{restauranteid}")
+		  public ResponseEntity<?> atualizarParcial(@PathVariable Long restauranteid, @RequestBody Map<String, Object> campos){
+			Restaurante restauranteAtual = restauranteRepository.buscar(restauranteid);
 
+			if(restaurante == null){
+				return ResponseEntity.notFound().build();
+			}
+			
+			merge(campos, restauranteAtual);
 
+			atualizar(restauranteid, restauranteAtual)
+
+		  }
+
+		-> É criado no Map tudo que é declarado explicitamente no corpo da requisição
+
+		-Imprimindo um Map:
+
+			compos.forEach((nomePropriedade, valorPropriedade -> {
+				System.out.println(nomePropriedade + "=" + valorPropriedade);
+			}));
+
+	3º Criaremos um segundo metodo:
+		- private void merger(Map<String, Object> campos, Restaurante restauranteDestino){
+		}
+	
+#4.34. Finalizando a atualização parcial com a API de Reflections do Spring
+
+	-> Reflections: capacidade de inspecionar objetos em tempo de execução
+
+	1º Implementar o metodo merger()
+
+		private void merger(Map<String, Object> campos, Restaurante restauranteDestino){
+			ObjectMapper objectMapper = new ObjectMapper();
+			Restaurante restauranteOrigem = objectMapper.convertValue(dasdosOrigem, Restaurante.class);
+
+			campos.forEach((nomePropriedade, valorPropriedade) -> {
+				Field field = ReflectionUtils.findFiels(Restaurante.class, nomePropriedade);
+				field.setAccessible(true);		
+				Object novoValor = ReflectionUtils.getField(field, restauranteOrigem);
+				//print
+				ReflectionUtils.setField(field, restauranteDestino, novoValor);
+			});
+		}
 
 
 

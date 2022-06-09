@@ -1,0 +1,36 @@
+#5.1. Implementando consultas JPQL em repositórios
+
+	-> As classes que implementão os repository, são notadas com @Component:
+		-> O correto agora é usar @Repository (contém um tradutor de exception)
+
+	-> 1ºAlt: Na interface CozinhaRepository, será adicionado:
+		->List<Cozinha> consultarPorNome(String nomeCozinha);
+
+	-> 2ºAlt: CozinhaRepositoryImp:
+		->
+		   :: manager.createQuery("from Cozinha where nome = :nome ", Cozinha.class)      nome - é um parametro nomeado
+		   							.setParameter("nome", nomeCozinha) "nome" vai receber nomeCozinha
+									.getResultList();
+
+	-> 3ºCreate: TesteController
+		->
+			:: uri - princ. - /teste 
+			:: uri - metd. - /cozinhas/por-nome?nome=Tailandesa      ?nome=Tailandesa - QueryString
+
+			:: Parametro do metodo (@RequestParam("nome") String nome)
+
+	-> Outra forma :
+			:: manager.createQuery("from Cozinha where nome like :nome ", Cozinha.class)
+		   							.setParameter("nome", "%" + nomeCozinha + "%") 
+									.getResultList();
+			
+
+#5.2. Conhecendo o projeto Spring Data JPA (SDJ)
+
+	->Spring Data
+		-> Sub projeto: Spring Data JPA (evita condigo boilerplace)
+
+	-> Então agora a interface Repository vai herdar de outra interface Spring Data JPA
+
+	-> Em tempo de execução o Sprind instancia um repository implementando, com os metodos:
+		- incluir, busar, excluir,...
