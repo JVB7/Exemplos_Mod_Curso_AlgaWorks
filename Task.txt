@@ -1,0 +1,31 @@
+	@PutMapping("/{cidadeid}")
+	public ResponseEntity<?> atualizar(@PathVariable Long cidadeid,@RequestBody Cidade cidadeAtualizada){
+		
+		try {
+			Optional<Cidade> cidadePersistida = cidadeRepository.findById(cidadeid);
+			BeanUtils.copyProperties(cidadeAtualizada, cidadePersistida.get(), "id");
+			Cidade cidadeSalva = cadastroCidade.adicionar(cidadePersistida.get());
+			return ResponseEntity.ok(cidadeSalva);
+			
+		}catch(EntidadeNaoEncontradaException e) {
+			return ResponseEntity.badRequest().body(e.getMessage());
+			
+		}catch(EmptyResultDataAccessException e) {
+			return ResponseEntity.notFound().build();
+		}
+	}
+
+
+#5.7Usando as keywords para definir critérios de query methods
+
+	5.7.1º Criar um metodo que vai consulta as taxas de frete dos restaurantes (taxainicial, taxaFinal)
+
+			R:
+				-> public List<Restaurante> findByTaxaFreteBetween(BigDecimal taxainicial, BigDecimal taxafinal);   /* INTERFACE */
+
+				-> @GetMapping("/por-taxa")  									    /* CONTROLLER */
+				    public List<Restaurante> porTaxa(BigDecimal taxaInicial, BigDecimal taxaFinal){
+					return restauranteRepository.findByTaxaFreteBetween(taxaInicial, taxaFinal);
+				    }
+
+				-> localhost:8080/restaurantes/por-taxa?taxaInicial=1&taxaFinal=9

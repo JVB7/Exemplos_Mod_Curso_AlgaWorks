@@ -1,5 +1,6 @@
 package com.algaworks.algafood.api.controller;
 
+
 import java.util.List;
 import java.util.Optional;
 
@@ -16,12 +17,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.algaworks.algafood.domain.exception.EntidadeEmUsoException;
 import com.algaworks.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.algaworks.algafood.domain.model.Cozinha;
+import com.algaworks.algafood.domain.model.Restaurante;
 import com.algaworks.algafood.domain.repository.CozinhaRepository;
 import com.algaworks.algafood.domain.service.CadastroCozinhaService;
 
@@ -52,6 +55,14 @@ public class CozinhaController {
 		
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 	}
+	
+	/*------------------------------------------------------------------------------------*/
+	@GetMapping("/por-nome")
+	public List<Cozinha> porNome(@RequestParam("nome") String nome){
+		return cozinhaRepository.findByNome(nome);
+	}
+	
+	/*------------------------------------------------------------------------------------*/
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
@@ -89,5 +100,4 @@ public class CozinhaController {
 		}
 	
 	}
-
 }

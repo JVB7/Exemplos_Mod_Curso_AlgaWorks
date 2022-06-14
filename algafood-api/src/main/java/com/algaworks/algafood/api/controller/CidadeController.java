@@ -1,6 +1,8 @@
 package com.algaworks.algafood.api.controller;
 
 import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Optional;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,16 +36,16 @@ public class CidadeController {
 	
 	@GetMapping
 	public List<Cidade> listar(){
-		return cidadeRepository.listar();
+		return cidadeRepository.findAll();
 	}
 	
 	@GetMapping("/{cidadeid}")
 	public ResponseEntity<Cidade> buscar(@PathVariable Long cidadeid) {
 		
-		Cidade cidade = cidadeRepository.buscar(cidadeid);
+		Optional<Cidade> cidade = cidadeRepository.findById(cidadeid);
 		
-		if(cidade != null) {
-			return ResponseEntity.ok(cidade);
+		if(cidade.get() != null) {
+			return ResponseEntity.ok(cidade.get());
 		}
 		
 		return ResponseEntity.notFound().build();
@@ -66,20 +68,22 @@ public class CidadeController {
 	public ResponseEntity<?> atualizar(@PathVariable Long cidadeid,@RequestBody Cidade cidadeAtualizada){
 		
 		try {
-			Cidade cidadePersistida = cidadeRepository.buscar(cidadeid);
-			BeanUtils.copyProperties(cidadeAtualizada, cidadePersistida, "id");
-			cidadePersistida = cadastroCidade.adicionar(cidadePersistida);
-			return ResponseEntity.ok(cidadePersistida);
+			Optional<Cidade> cidadePersistida = cidadeRepository.findById(cidadeid);
+			BeanUtils.copyProperties(cidadeAtualizada, cidadePersistida.get(), "id");
+			Cidade cidadeSalva = cadastroCidade.adicionar(cidadePersistida.get());
+			return ResponseEntity.ok(cidadeSalva);
 			
-		}catch(EntidadeNaoEncontradaException e) {
+		}/*catch(EntidadeNaoEncontradaException e) {
 			return ResponseEntity.badRequest().body(e.getMessage());
 			
-		}catch(EmptyResultDataAccessException e) {
+		}*/catch(EmptyResultDataAccessException e) {
 			return ResponseEntity.notFound().build();
+		}catch(NoSuchElementException e) {
+			return ResponseEntity.badRequest().build();
 		}
 	}
 	
-	@DeleteMapping("/{estadoid}")
+	@DeleteMapping("/{cidadeid}")
 	public ResponseEntity<?> excluir(@PathVariable Long cidadeid) {
 		try {
 			cadastroCidade.excluir(cidadeid);

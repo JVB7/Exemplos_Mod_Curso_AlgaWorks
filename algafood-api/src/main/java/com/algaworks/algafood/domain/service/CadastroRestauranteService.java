@@ -1,6 +1,7 @@
 package com.algaworks.algafood.domain.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import com.algaworks.algafood.domain.exception.EntidadeNaoEncontradaException;
@@ -28,7 +29,20 @@ public class CadastroRestauranteService {
 		
 		restaurante.setCozinha(cozinha);
 		
-		return restauranteRepository.salvar(restaurante);
+		return restauranteRepository.save(restaurante);
+	}
+	
+	public void excluir(Long id) {
+		
+		try {
+			restauranteRepository.deleteById(id);
+			
+		}catch(EmptyResultDataAccessException e) {
+			throw new EntidadeNaoEncontradaException(String
+					.format("O restaurante id: %d, não foi encontrado", id));
+		}
+		
+		
 	}
 	
 }
