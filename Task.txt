@@ -29,3 +29,73 @@
 				    }
 
 				-> localhost:8080/restaurantes/por-taxa?taxaInicial=1&taxaFinal=9
+
+#5.9. Usando queries JPQL customizadas com @Query
+
+	5.9.1º Deve ser criado um metodo de nome proprio, ex: consultarPorNome() e criar a consulta usando JPQL
+
+			R:
+				-> @Query(" from Restaurante where nome like %:nome% and cozinha.id = :id ")
+				   List<Cozinha> consultarPorNome(String nome, @Param("id") Long cozinha);
+
+#5.10. Externalizando consultas JPQL para um arquivo XML
+
+	5.10.1º Crie uma pasta com um arquivo orm.xml, no diretrio src/main/resources e configure o arquivo para mapear as entidades (JPA)
+			R:
+				-> 
+				<?xml version="1.0" encoding="UTF-8"?>
+				<entity-mappings
+					xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    					xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/orm_2_2.xsd"
+    					version="2.2">
+							<named-query name="Restaurante.consultarPorNome">
+								<query>
+									from Restaurante 
+									where nome like concat('%', :nome, '% ')
+									and cozinha.id = :id
+								</query>
+							</named-query>
+
+				</entity-mappings>
+
+#5.11. Implementando um repositório SDJ customizado
+
+	5.11.1 Adicione um metodo especifico (buscaFiltrada()) no repositório principal 
+		-> 
+		@Repository
+		public interface RestauranteRepository extends RestauranteRepositoryFilter, JpaRepository<Restaurante, Long> {
+		}
+
+	5.11.2 A classe RestauranteRepositoryFilterImpl vai implementar o metodo  buscaFiltrada(nome, taxaInicial, taxaFinal)  
+
+		-> RestauranteRepositoryFilterImpl  implements RestauranteRepositoryFilter 
+		@Repository
+		public class RestauranteRepositoryFilterImpl implements RestauranteRepositoryFilter {
+	
+			@PersistenceContext
+			private EntityManager manage;
+
+			@Override
+			public List<Restaurante> buscaFiltrada(String nome, BigDecimal taxaFreteInicial, BigDecimal taxaFreteFinal) {
+			String jpql = "From Restaurante where nome like :nome and taxaFrete between :taxaFreteInicial and :taxaFreteFinal";
+		
+				return manage.createQuery(jpql, Restaurante.class)
+				.setParameter("nome", "%"+nome+"%")
+				.setParameter("taxaFreteInicial", taxaFreteInicial)
+				.setParameter("taxaFreteFinal", taxaFreteFinal)
+				.getResultList();
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+

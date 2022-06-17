@@ -7,6 +7,7 @@ import java.util.Optional;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.data.repository.query.Param;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -53,9 +54,14 @@ public class RestauranteController {
 	
 	/*------------------------------------------------------------------------------------*/
 	
-	@GetMapping("/por-taxa")
-	public List<Restaurante> porTaxa(BigDecimal taxaInicial, BigDecimal taxaFinal){
-		return restauranteRepository.findByTaxaFreteBetween(taxaInicial, taxaFinal);
+//	@GetMapping("/por-taxa")
+//	public List<Restaurante> porTaxa(BigDecimal taxaInicial, BigDecimal taxaFinal){
+//		return restauranteRepository.findByTaxaFreteBetween(taxaInicial, taxaFinal);
+//	}
+	
+	@GetMapping("/por-nome-taxa")
+	public List<Restaurante> buscaSelecionada(String nome, BigDecimal taxaFreteInicial, BigDecimal taxaFreteFinal){
+		return restauranteRepository.buscaFiltrada(nome, taxaFreteInicial, taxaFreteFinal);
 	}
 	
 	/*------------------------------------------------------------------------------------*/
@@ -111,15 +117,6 @@ public class RestauranteController {
 //	public ResponseEntity<?> atualizarParcial(@PathVariable Long restauranteid, @RequestBody Restaurante restaurante){
 //		
 //	}
-
-
-
-
-
-
-
-
-
 
 
 }
