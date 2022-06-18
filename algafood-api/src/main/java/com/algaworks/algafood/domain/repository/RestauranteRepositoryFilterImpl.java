@@ -1,6 +1,7 @@
 package com.algaworks.algafood.domain.repository;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -33,10 +34,23 @@ public class RestauranteRepositoryFilterImpl implements RestauranteRepositoryFil
 		
 		Root<Restaurante> root=  criteria.from(Restaurante.class);
 		
-		Predicate predicadoNome = builder.like(root.get("nome"), "%"+nome+"%");
-		Predicate predicadotaxa = builder.between(root.get("taxaFrete"), taxaFreteInicial, taxaFreteFinal);
+		var listaPredicados = new ArrayList<Predicate>();
 		
-		criteria.where(predicadoNome, predicadotaxa);
+		if(org.springframework.util.StringUtils.hasText(nome)) {
+			listaPredicados.add(builder.like(root.get("nome"), "%"+nome+"%"));
+		}
+		
+		if(taxaFreteInicial != null) {
+			listaPredicados.add(builder.greaterThan(root.get("taxaFrete"), taxaFreteInicial));
+		}
+		if(taxaFreteFinal != null) {
+			listaPredicados.add(builder.lessThanOrEqualTo(root.get("taxaFrete"), taxaFreteFinal));
+		}
+		
+//		Predicate predicadoNome = builder.like(root.get("nome"), "%"+nome+"%");
+//		Predicate predicadotaxa = builder.between(root.get("taxaFrete"), taxaFreteInicial, taxaFreteFinal);
+		
+		criteria.where(listaPredicados.toArray(new Predicate[0]));
 		
 		TypedQuery<Restaurante> query = manage.createQuery(criteria);
 		
