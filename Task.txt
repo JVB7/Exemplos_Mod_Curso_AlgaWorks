@@ -92,6 +92,13 @@
 
 	-> RepositoryFilterImpl: From Restaurante - usando - > Criteria
 
+#5.14. Adicionando restrições na cláusula where com Criteria API (Continuação 5.13)
+
+	-> From Restaurante
+	-> Condição/Criterio de bsuca: nome like "%"+nome+"%"                                   -> Predicate1
+	-> Condição/Criterio de bsuca: taxaFrete between :taxaFreteInical and :taxaFreteFinal   -> Predicate2
+	-> critaria.where(Predicate1, Predicate2);
+
 
 
 
