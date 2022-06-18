@@ -88,6 +88,10 @@
 			}
 		}
 
+#5.13. Implementando uma consulta simples com Criteria API
+
+	-> RepositoryFilterImpl: From Restaurante - usando - > Criteria
+
 
 
 
